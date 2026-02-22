@@ -1,22 +1,58 @@
+# Maya — Offline AI Companion
+
+Maya is a personal AI companion designed for emotionally aware, long-term interaction.  
+Built as a modular, scalable system with hybrid intelligence and full offline capability.
+
+---
+
 ## Current Capabilities (v1.1)
-- Offline voice assistant
-- Wake-word based interaction ("maya")
-- Persistent user memory
-- Emotion-aware responses
+
+- Fully offline AI (powered by local LLM via Ollama)
+- Voice + Text interaction modes
+- Wake-word based activation ("maya")
+- Persistent user memory (profile + conversation history)
+- Emotion-aware response system
 - Emotion continuity within session
-- Fully offline (no internet required)
+- Hybrid intelligence (rule-based + ML-based detection)
+- Automatic online/offline decision engine (future-ready architecture)
 
-## Known Limitations
-- Name recognition may be imperfect (offline STT)
-- Wake word is keyword-based, not ML
+---
 
+## Core Architecture
 
-⚠️ Known Limitations (v1.1)
+- Modular design (`core/`, `online/`, `data/`)
+- Emotion & intent detection engine
+- Emotional memory with trend tracking
+- Hybrid response prioritization (emotion-first logic)
+- Local LLM integration via Ollama
+- Scalable foundation for future personality modeling & adaptive gameplay
 
-Proper noun recognition (e.g. Samarth) may be inaccurate
+---
 
-Wake word requires clear pronunciation (“maya”)
+## Known Limitations (v1.1)
 
-Offline STT has slight latency
+- Proper noun recognition (e.g., user names) may be imperfect due to offline STT limitations
+- Wake-word detection is keyword-based (not ML-trained yet)
+- Offline speech-to-text introduces slight latency
+- Emotional responses are rule-prioritized (adaptive personality under development)
 
-No wake-word ML yet (keyword-based)
+---
+
+## Project Vision
+
+Maya is being developed as a long-term AI companion —  
+not just a chatbot, but an emotionally aware system capable of:
+
+- Behavioral adaptation  
+- Conversation continuity across sessions  
+- Personalized interaction memory  
+- Future interactive gameplay integration  
+
+---
+
+## Tech Stack
+
+- Python 3.14  
+- Ollama (Local LLM)  
+- Vosk (Offline STT)  
+- Modular architecture design  
